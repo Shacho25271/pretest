@@ -3,30 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Unity WebGL Player | PresidentWorld</title>
+    <title>Unity WebGL Player | President World</title>
     <script src="Build/UnityLoader.js"></script>
-    <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    </style>
     <script>
-      UnityLoader.SystemInfo.mobile = false;
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/PresidentWorld.json");
+      UnityLoader.instantiate("unityContainer", "Build/docs.json");
     </script>
   </head>
-  <body bgcolor="#000000">
-    <script>
-      document.write('<div id="gameContainer" style="width: '+
-        document.documentElement.clientWidth+'px; height: '+
-        document.documentElement.clientHeight+'px; margin: auto"></div>')
-      var canvas = document.getElementById("gameContainer") ;
-      window.onresize = function(){
-        canvas.style.width = document.documentElement.clientWidth+"px";
-        canvas.style.height = document.documentElement.clientHeight+"px";
-      }
-    </script>
+  <body>
+    <div id="unityContainer" style="width: 1280px; height: 960px; margin: auto"></div>
   </body>
 </html>
